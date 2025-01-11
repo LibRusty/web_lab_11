@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "AccessServiceDirectly";
+}
+
+<h2>AccessServiceDirectly</h2>
+
+<p>Rand Value First: @ViewBag.A</p>
+<p>Rand Value Second: @ViewBag.B</p>
+
+<p>Add:</p>
+<p>@ViewBag.A + @ViewBag.B = @ViewBag.Sum</p>
+
+<p>Sub:</p>
+<p>@ViewBag.A - @ViewBag.B = @ViewBag.Difference</p>
+
+<p>Mult:</p>
+<p>@ViewBag.A * @ViewBag.B = @ViewBag.Product</p>
+
+<p>Div:</p>
+<p>@ViewBag.A / @ViewBag.B = @(ViewBag.Quotient == null ? "Ошибка: деление на ноль" : ViewBag.Quotient.ToString())</p>

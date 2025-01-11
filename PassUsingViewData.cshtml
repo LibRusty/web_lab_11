@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "PassUsingViewData";
+}
+
+<h2>PassUsingViewData</h2>
+
+<p>Rand Value First: @ViewData["A"]</p>
+<p>Rand Value Second: @ViewData["B"]</p>
+
+<p>Add:</p>
+<p>@ViewData["A"] + @ViewData["B"] = @ViewData["Sum"]</p>
+
+<p>Sub:</p>
+<p>@ViewData["A"] - @ViewData["B"] = @ViewData["Difference"]</p>
+
+<p>Mult:</p>
+<p>@ViewData["A"] * @ViewData["B"] = @ViewData["Product"]</p>
+
+<p>Div:</p>
+<p>@ViewBag.A / @ViewBag.B = @(ViewBag.Quotient == null ? "Ошибка: деление на ноль" : ViewBag.Quotient.ToString())</p>

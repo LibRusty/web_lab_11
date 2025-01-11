@@ -1,0 +1,22 @@
+@model CalcService.Controllers.CalcModel
+
+@{
+    ViewData["Title"] = "PassUsingModel";
+}
+
+<h2>PassUsingModel</h2>
+
+<p>Rand Value First: @Model.A</p>
+<p>Rand Value Second: @Model.B</p>
+
+<p>Add:</p>
+<p>@Model.A + @Model.B = @Model.Sum</p>
+
+<p>Sub:</p>
+<p>@Model.A - @Model.B = @Model.Difference</p>
+
+<p>Mult:</p>
+<p>@Model.A * @Model.B = @Model.Product</p>
+
+<p>Div:</p>
+<p>@ViewBag.A / @ViewBag.B = @(ViewBag.Quotient == null ? "Ошибка: деление на ноль" : ViewBag.Quotient.ToString())</p>
